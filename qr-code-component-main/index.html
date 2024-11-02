@@ -10,15 +10,66 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+      bottom: 10px;
+      position: absolute;
+    }
+    .attribution a {
+       color: hsl(228, 45%, 44%);
+       }
+       body{
+        background: hsl(212, 45%, 89%);
+       }
+       .card{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top:120px;
+       }
+       .qr{
+        background: hsl(0, 0%, 100%);
+        padding: 20px;
+        padding-bottom: 2lh;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 17%; 
+        box-sizing: border-box;
+       }
+       .qr img{
+        width: 15vw;
+        border-radius: 15px;
+       }
+       .card p{
+        font-family: 'Outfit', sans-serif;
+        white-space: normal;
+        text-align: center;
+        width: 100%;
+        max-width: 80%;
+        margin: 7px auto;
+      }
+      .card p:nth-child(2){
+        font-weight: 700;
+      
+      }
+      .card p:nth-child(3){
+        color: hsl(216, 15%, 48%);
+      }
   </style>
+
 </head>
 <body>
+  <div class="card">
+  <div class="qr">
+    <img src="./images/image-qr-code.png" alt="">
+    <p>Improve your front-end skills by building projects</p>
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </div>
+</div>
 
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
